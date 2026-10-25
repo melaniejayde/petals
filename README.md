@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -72,4 +71,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 =======
 # Petals
 A react based website for a cake business.
->>>>>>> fe05f6ac107367147cce8d933c51e22ebcd7d28f
