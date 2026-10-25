@@ -1,2 +1,2 @@
 # Petals
-A react based website for a cake business. [AI assisted]
+A react based website for a cake business.
