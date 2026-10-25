@@ -1,23 +1,44 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+      <nav className="navbar">
+        <a href="/" className="navbar-logo">
+          Petals
         </a>
-      </header>
+
+        <ul className="navbar-links">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/cakes">Our Cakes</a>
+          </li>
+          <li>
+            <a href="/about">About Us</a>
+          </li>
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
+        </ul>
+
+        <a href="/cakes" className="navbar-button">
+          Order a Cake
+        </a>
+      </nav>
+
+      <main className="hero">
+        <p className="hero-subtitle">MADE WITH LOVE</p>
+        <h1>A little sweetness goes a long way.</h1>
+        <p>
+          Beautiful, handcrafted cakes for life's sweetest moments.
+        </p>
+        <a href="/cakes" className="hero-button">
+          Explore Our Cakes
+        </a>
+      </main>
     </div>
   );
 }

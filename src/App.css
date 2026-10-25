@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff9f5;
+  color: #543b35;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 6%;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(84, 59, 53, 0.08);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-logo {
+  font-family: Georgia, serif;
+  font-size: 26px;
+  font-weight: bold;
+  color: #b76e79;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #543b35;
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+
+.navbar-links a:hover {
+  color: #d47f91;
+}
+
+.navbar-button,
+.hero-button {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 25px;
+  background-color: #d47f91;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.navbar-button:hover,
+.hero-button:hover {
+  background-color: #b76e79;
+}
+
+.hero {
+  min-height: 75vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.hero-subtitle {
+  color: #b76e79;
+  letter-spacing: 4px;
+  font-size: 13px;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.hero h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(36px, 5vw, 58px);
+  max-width: 750px;
+  margin-bottom: 20px;
+}
+
+.hero p:not(.hero-subtitle) {
+  color: #806c65;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 18px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar-links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  .navbar-logo {
+    font-size: 22px;
+  }
+
+  .navbar-button {
+    padding: 10px 15px;
+    font-size: 14px;
   }
 }
